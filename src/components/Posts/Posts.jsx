@@ -3,7 +3,7 @@ const Posts = ({ img, heading, date }) => {
         <div className='flex gap-3 items-center'>
             <img src={img} alt="" />
             <div>
-                <p className='w-[200px]'>{heading}</p>
+                <p className='w-[200px] cursor-pointer'>{heading}</p>
                 <p className='text-[#ff7425]'>{date}</p>
             </div>
         </div>
