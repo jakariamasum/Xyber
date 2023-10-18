@@ -4,12 +4,14 @@
 import Blogs from "./components/Blogs/Blogs"
 import Footer from "./components/Footer/Footer"
 import Plans from "./components/Plans/Plans"
+import Questions from "./components/Questions/Questions"
 import Testimonials from "./components/Testimonials/Testimonials"
 
 function App() {
 
   return (
     <div>
+      <Questions/>
       <Plans/>
       <Testimonials/>
       <Blogs/>
