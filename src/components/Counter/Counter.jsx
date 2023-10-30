@@ -2,7 +2,7 @@ import bg from '../../assets/counter-bg.png';
 
 const Counter = () => {
     return (
-        <div className='relative text-white my-16'>
+        <div className='relative text-white mb-16'>
             <img src={bg} alt="" className='h-[250px] w-full' />
             <div className='w-full px-28 absolute top-1/3 grid grid-cols-4'>
                 <div className='flex gap-6 items-center justify-center'>
