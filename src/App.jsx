@@ -1,6 +1,7 @@
 
 // import './App.css'
 
+import About from "./components/About/About"
 import Blogs from "./components/Blogs/Blogs"
 import Counter from "./components/Counter/Counter"
 import Footer from "./components/Footer/Footer"
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <div>
+      <About/>
       <Service/>
       <Counter/>
       <Team/>
