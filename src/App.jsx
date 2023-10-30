@@ -6,6 +6,7 @@ import Blogs from "./components/Blogs/Blogs"
 import Counter from "./components/Counter/Counter"
 import Footer from "./components/Footer/Footer"
 import Hero from "./components/Hero/Hero"
+import Navbar from "./components/Navbar/Navbar"
 import Plans from "./components/Plans/Plans"
 import Questions from "./components/Questions/Questions"
 import Service from "./components/Service/Service"
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <div>
+      <Navbar/>
       <Hero/>
       <About/>
       <Service/>
