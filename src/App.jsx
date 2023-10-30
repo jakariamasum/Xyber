@@ -5,6 +5,7 @@ import About from "./components/About/About"
 import Blogs from "./components/Blogs/Blogs"
 import Counter from "./components/Counter/Counter"
 import Footer from "./components/Footer/Footer"
+import Hero from "./components/Hero/Hero"
 import Plans from "./components/Plans/Plans"
 import Questions from "./components/Questions/Questions"
 import Service from "./components/Service/Service"
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <div>
+      <Hero/>
       <About/>
       <Service/>
       <Counter/>
