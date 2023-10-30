@@ -2,6 +2,7 @@
 // import './App.css'
 
 import Blogs from "./components/Blogs/Blogs"
+import Counter from "./components/Counter/Counter"
 import Footer from "./components/Footer/Footer"
 import Plans from "./components/Plans/Plans"
 import Questions from "./components/Questions/Questions"
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <div>
+      <Counter/>
       <Team/>
       <Watch/>
       <Questions/>
