@@ -6,6 +6,7 @@ import Main from "../LayOut/Main";
 import Home from "../LayOut/Home";
 import AboutPage from "../Pages/AboutPage/AboutPage";
 import ServicePage from "../Pages/ServicePage/ServicePage";
+import TeamDetails from "../Pages/TeamDetails/TeamDetails";
 
   export const router = createBrowserRouter([
     {
@@ -27,6 +28,10 @@ import ServicePage from "../Pages/ServicePage/ServicePage";
         {
             path:'/services',
             element: <ServicePage/>
+        },
+        {
+          path: '/details/:id',
+          element: <TeamDetails/>
         }
       ],
     },
