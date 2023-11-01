@@ -8,6 +8,7 @@ import AboutPage from "../Pages/AboutPage/AboutPage";
 import ServicePage from "../Pages/ServicePage/ServicePage";
 import TeamDetails from "../Pages/TeamDetails/TeamDetails";
 import Error from "../Pages/Error/Error";
+import BlogDetails from "../Pages/BlogDetails/BlogDetails";
 
   export const router = createBrowserRouter([
     {
@@ -34,6 +35,10 @@ import Error from "../Pages/Error/Error";
         {
           path: '/details/:id',
           element: <TeamDetails/>
+        },
+        {
+          path: '/blog-details/:id',
+          element: <BlogDetails/>
         }
       ],
     },
