@@ -1,17 +1,26 @@
-import { Link } from 'react-router-dom';
-import login from '../../assets/login.jpg';
 import { FaFacebookF, FaGithub, FaGoogle } from 'react-icons/fa';
-
-const Login = () => {
+import register from '../../assets/register.jpg'
+import { Link } from 'react-router-dom';
+const Register = () => {
     return (
-        <div className='mt-24 flex gap-2 mx-28 bg-white items-center'>
+        <div className='mt-24 pt-8 pb-12 flex gap-2 mx-28 bg-white items-center'>
             <div className='flex-1'>
-                <img src={login} alt="" />
+                <img src={register} alt="" />
             </div>
             <div className='flex-1'>
-                <h1 className='text-3xl font-semibold'>Login</h1>
-                <p className='text-[#777] mt-2'>Doesn't have an account yet? <Link to='/register'><span className='underline text-[#FF7425]'>Sign Up</span></Link></p>
+                <h1 className='text-3xl font-semibold'>Sign Up</h1>
+                <p className='text-[#777] mt-2'>Already have an account? <Link to='/login'><span className='underline text-[#FF7425]'>Sign In</span></Link></p>
                 <form className='flex flex-col mt-7 gap-2'>
+                    <div className='flex gap-5'>
+                        <div className='flex flex-col gap-1'>
+                            <label className='text-xl text-[#232323] font-semibold'>First Name</label>
+                            <input type="text" name="" id="" placeholder="John" className="py-3 md:py-4 px-2 rounded-sm border border-black" />
+                        </div>
+                        <div className='flex flex-col gap-1'>
+                            <label className='text-xl text-[#232323] font-semibold'>Last Name</label>
+                            <input type="text" name="" id="" placeholder="Doe" className="py-3 md:py-4 px-2 rounded-sm border border-black" />
+                        </div>
+                    </div>
                     <div className='flex flex-col gap-1'>
                         <label className='text-xl text-[#232323] font-semibold'>Email</label>
                         <input type="email" name="" id="" placeholder="you@example.com" className="py-3 md:py-4 px-2 w-1/2 rounded-sm border border-black" />
@@ -19,14 +28,17 @@ const Login = () => {
                     <div className='flex flex-col gap-1'>
                         <label className='text-xl text-[#232323] font-semibold'>Password</label>
                         <input type="password" name="" id="" placeholder="Password" className="py-3 md:py-4 px-2 w-1/2 rounded-sm border border-black" />
-
+                    </div>
+                    <div className='flex flex-col gap-1'>
+                        <label className='text-xl text-[#232323] font-semibold'>Confirm Password</label>
+                        <input type="password" name="" id="" placeholder="Confirm Password" className="py-3 md:py-4 px-2 w-1/2 rounded-sm border border-black" />
                     </div>
                     <div className=" my-4">
-                        <input type="submit" value="Login" className="bg-[#FF7425] px-4 md:px-8 rounded-lg text-white cursor-pointer py-3 md:py-4" />
+                        <input type="submit" value="Sign Up" className="bg-[#FF7425] px-4 md:px-8 rounded-lg text-white cursor-pointer py-3 md:py-4" />
                     </div>
                     <div className='flex gap-2 items-center'>
                         <div className="bg-gray-500 text-gray-500 w-1/3 h-[2px]"></div>
-                        <p className='text-[#777] '>or login with</p>
+                        <p className='text-[#777] '>or sign-up with</p>
                         <div className="bg-gray-500 text-gray-500 w-1/3 h-[2px]"></div>
                     </div>
                     <div className='flex gap-2 ml-20 mt-5'>
@@ -46,4 +58,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Register;
