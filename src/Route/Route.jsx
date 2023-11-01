@@ -12,6 +12,7 @@ import BlogDetails from "../Pages/BlogDetails/BlogDetails";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import BlogsPage from "../Pages/BlogsPage/BlogsPage";
+import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 
   export const router = createBrowserRouter([
     {
@@ -54,6 +55,10 @@ import BlogsPage from "../Pages/BlogsPage/BlogsPage";
         {
           path:'/blogs',
           element: <BlogsPage/>
+        },
+        {
+          path:'/service-details/:id',
+          element: <ServiceDetails/>
         }
       ],
     },
