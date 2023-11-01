@@ -5,7 +5,7 @@ import { FiFacebook, FiInstagram, FiSend, FiTwitter } from 'react-icons/fi';
 
 const Footer = () => {
     return (
-        <div className="bg-[#1D2022] p-4 md:p-8 lg:p-32 text-white">
+        <div className="bg-[#1D2022] p-4 md:p-8 lg:p-16 text-white">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                 <div className="flex flex-col gap-4">
                     <h1 className="text-[#FF7425] font-bold text-2xl md:text-4xl lg:text-4xl">Xyber</h1>
