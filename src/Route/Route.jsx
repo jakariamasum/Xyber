@@ -9,6 +9,7 @@ import ServicePage from "../Pages/ServicePage/ServicePage";
 import TeamDetails from "../Pages/TeamDetails/TeamDetails";
 import Error from "../Pages/Error/Error";
 import BlogDetails from "../Pages/BlogDetails/BlogDetails";
+import Login from "../Pages/Login/Login";
 
   export const router = createBrowserRouter([
     {
@@ -39,6 +40,10 @@ import BlogDetails from "../Pages/BlogDetails/BlogDetails";
         {
           path: '/blog-details/:id',
           element: <BlogDetails/>
+        },
+        {
+          path: '/login',
+          element: <Login/>
         }
       ],
     },
