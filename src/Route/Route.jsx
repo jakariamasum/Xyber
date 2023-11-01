@@ -11,6 +11,7 @@ import Error from "../Pages/Error/Error";
 import BlogDetails from "../Pages/BlogDetails/BlogDetails";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
+import BlogsPage from "../Pages/BlogsPage/BlogsPage";
 
   export const router = createBrowserRouter([
     {
@@ -49,6 +50,10 @@ import Register from "../Pages/Register/Register";
         {
           path: '/register',
           element: <Register/>
+        },
+        {
+          path:'/blogs',
+          element: <BlogsPage/>
         }
       ],
     },

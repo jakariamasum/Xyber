@@ -7,9 +7,14 @@ import blog1 from '../../assets/blog1.jpg'
 import blog2 from '../../assets/blog2.jpg'
 import user from '../../assets/user2.png'
 
-import { FaCalendarAlt, FaComments, FaEye, FaFacebookF, FaInstagram, FaLinkedin, FaPinterestP, FaTwitter, FaWordpress } from "react-icons/fa";
+import { FaCalendarAlt, FaComments, FaEye, FaFacebookF, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import BlogCard from "../../components/Blogs/BlogCard";
+import Search from "../../components/Search/Search";
+import Follow from "../../components/Follow/Follow";
+import Categories from "../../components/Categories/Categories";
+import Tag from "../../components/Tag/Tag";
+import RecentPost from "../../components/RecentPost/RecentPost";
 const BlogDetails = () => {
     return (
         <div>
@@ -103,76 +108,11 @@ const BlogDetails = () => {
                     </div>
                 </div>
                 <div className="flex flex-col gap-8">
-                    <div className="bg-white p-10 rounded-sm">
-                        <div className="flex mb-5 gap-2">
-                            <div className="bg-[#FF7425] w-2  h-auto"></div>
-                            <h2 className="text-xl font-semibold text-[#232323] ">Search</h2>
-                        </div>
-                        <input type="search" name="" id="" className="p-3 bg-[#F5F5F5] placeholder:pl-5" placeholder="Search" />
-                        <span className="p-4 bg-[#FF7425] text-white">Search</span>
-                    </div>
-                    <div className="bg-white p-10 rounded-sm">
-                        <div className="flex mb-5 gap-2">
-                            <div className="bg-[#FF7425] w-2  h-auto"></div>
-                            <h2 className="text-xl font-semibold text-[#232323] ">Follow Us</h2>
-                        </div>
-                        <div className="flex gap-4">
-                            <FaTwitter size={40} className="text-[#6E6E6E] bg-transparent border cursor-pointer transition-all border-gray-400 rounded-[50%] p-3 hover:bg-[#FF7425] hover:text-white hover:border-none" />
-                            <FaFacebookF size={40} className="text-[#6E6E6E] bg-transparent border cursor-pointer transition-all border-gray-400 rounded-[50%] p-3 hover:bg-[#FF7425] hover:text-white hover:border-none" />
-                            <FaPinterestP size={40} className="text-[#6E6E6E] bg-transparent border cursor-pointer transition-all border-gray-400 rounded-[50%] p-3 hover:bg-[#FF7425] hover:text-white hover:border-none" />
-                            <FaInstagram size={40} className="text-[#6E6E6E] bg-transparent border cursor-pointer transition-all border-gray-400 rounded-[50%] p-3 hover:bg-[#FF7425] hover:text-white hover:border-none" />
-                            <FaWordpress size={40} className="text-[#6E6E6E] bg-transparent border cursor-pointer transition-all border-gray-400 rounded-[50%] p-3 hover:bg-[#FF7425] hover:text-white hover:border-none" />
-                        </div>
-                    </div>
-                    <div className="bg-white p-10 rounded-sm">
-                        <div className="flex mb-5 gap-2">
-                            <div className="bg-[#FF7425] w-2  h-auto"></div>
-                            <h2 className="text-xl font-semibold text-[#232323] ">Categories</h2>
-                        </div>
-                        <div className="text-[#777] flex flex-col gap-3">
-                            <div className="cursor-pointer flex justify-between hover:text-[#FF7425]">
-                                <p>Branding</p> <p className="">(5)</p>
-                            </div>
-                            <div className="cursor-pointer flex justify-between hover:text-[#FF7425]">
-                                <p>Corporate</p> <p className="">(5)</p>
-                            </div>
-                            <div className="cursor-pointer flex justify-between hover:text-[#FF7425]">
-                                <p>Design</p> <p className="">(5)</p>
-                            </div>
-                            <div className="cursor-pointer flex justify-between hover:text-[#FF7425]">
-                                <p>Gallary</p> <p className="">(5)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="bg-white p-10 rounded-sm">
-                        <div className="flex mb-5 gap-2">
-                            <div className="bg-[#FF7425] w-2  h-auto"></div>
-                            <h2 className="text-xl font-semibold text-[#232323] ">Recent Posts</h2>
-                        </div>
-                        <div className="text-[#777] flex flex-col gap-4">
-                            <h2 className="cursor-pointer hover:text-[#FF7425] text-[16px] leading-7">User Experience Psychology And Performance Smshing August 19, 2020</h2>
-                            <h2 className="cursor-pointer hover:text-[#FF7425] text-[16px] leading-7">Monthly Web Development Up Cost Of JavaScript August 19, 2020</h2>
-                            <h2 className="cursor-pointer hover:text-[#FF7425] text-[16px] leading-7">There are many variation passages of like available. August 19, 2020</h2>
-                        </div>
-                    </div>
-                    <div className="bg-white p-10 rounded-sm">
-                        <div className="flex mb-5 gap-2">
-                            <div className="bg-[#FF7425] w-2  h-auto"></div>
-                            <h2 className="text-xl font-semibold text-[#232323] ">Tag</h2>
-                        </div>
-                        <div className="text-[#777] flex flex-col gap-3">
-                            <div className="flex flex-wrap gap-4">
-                                <Tags name={'App'} />
-                                <Tags name={'Branding'} />
-                                <Tags name={'Corporate'} />
-                                <Tags name={'Design'} />
-                                <Tags name={'Gallery'} />
-                                <Tags name={'Vedio'} />
-                                <Tags name={'Web Design'} />
-                            </div>
-                        </div>
-                    </div>
-
+                    <Search/>
+                    <Follow/>
+                    <Categories/>
+                    <RecentPost/>
+                    <Tag/>
                 </div>
             </div>
         </div>

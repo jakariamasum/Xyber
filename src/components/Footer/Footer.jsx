@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import post1 from '../../assets/post1.png'
 import post2 from '../../assets/post2.png'
 import Posts from "../Posts/Posts";
@@ -17,12 +18,12 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-col gap-4 ">
                     <h1 className="text-xl md:text-2xl lg:text-2xl">Our Links</h1>
-                    <ul className="flex flex-col gap-2 md:text-base lg:text-base cursor-pointer">
-                        <li className="hover:text-[#FF7425]">Home</li>
-                        <li className="hover:text-[#FF7425]">About Us</li>
-                        <li className="hover:text-[#FF7425]">Service</li>
-                        <li className="hover:text-[#FF7425]">Contact Us</li>
-                        <li className="hover:text-[#FF7425]">Blog</li>
+                    <ul className="flex w-fit flex-col gap-2 md:text-base lg:text-base cursor-pointer">
+                        <Link to='/'><li className="hover:text-[#FF7425]">Home</li></Link>
+                        <Link to='/about'><li className="hover:text-[#FF7425]">About Us</li></Link>
+                        <Link to='/services'><li className="hover:text-[#FF7425]">Service</li></Link>
+                        <Link to='/contact'><li className="hover:text-[#FF7425]">Contact Us</li></Link>
+                        <Link to='/blogs'><li className="hover:text-[#FF7425]">Blog</li></Link>
                     </ul>
                 </div>
                 <div className="flex flex-col gap-4 ">
