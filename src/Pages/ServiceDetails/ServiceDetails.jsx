@@ -6,9 +6,9 @@ import img3 from '../../assets/protfolio-img02.png'
 import { FaArrowRight, FaFilePdf } from "react-icons/fa";
 const ServiceDetails = () => {
     return (
-        <div className="mt-20 ">
+        <div>
             <Banner img={banner} name={'Service Details'} first={'Home'} second={'Services'} />
-            <div className="flex gap-6 my-12 mx-28">
+            <div className="flex flex-col md:flex-row mx-3 gap-6 my-12 lg:mx-28">
                 <div className="w-full">
                     <div className="bg-[#F3F4F8] p-6">
                         <div className="flex mb-5 gap-2">

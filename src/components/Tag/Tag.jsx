@@ -8,7 +8,7 @@ const Tag = () => {
                 <h2 className="text-xl font-semibold text-[#232323] ">Tag</h2>
             </div>
             <div className="text-[#777] flex flex-col gap-3">
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-wrap gap-2 md:gap-4">
                     <Tags name={'App'} />
                     <Tags name={'Branding'} />
                     <Tags name={'Corporate'} />

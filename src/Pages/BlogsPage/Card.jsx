@@ -3,7 +3,7 @@ import img from '../../assets/blog1.jpg'
 const Card = () => {
     return (
         <div>
-            <img src={img} alt="" className='h-[450px] w-full'/>
+            <img src={img} alt="" className='h-full lg:h-[450px] w-full'/>
             <div className='bg-white px-4 py-8'>
                 <div className='flex gap-10 py-4'>
                     <div className='flex gap-2 items-center'>

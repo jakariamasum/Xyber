@@ -7,7 +7,7 @@ const Register = () => {
             <div className='flex-1'>
                 <img src={register} alt="" />
             </div>
-            <div className='flex-1 text-center'>
+            <div className='flex-1 text-center md:text-left'>
                 <h1 className='text-3xl font-semibold'>Sign Up</h1>
                 <p className='text-[#777] mt-2'>Already have an account? <Link to='/login'><span className='underline text-[#FF7425]'>Sign In</span></Link></p>
                 <form className='flex flex-col mt-7 gap-2'>

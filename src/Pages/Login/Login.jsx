@@ -8,17 +8,17 @@ const Login = () => {
             <div className='flex-1'>
                 <img src={login} alt="" />
             </div>
-            <div className='flex-1 text-center'>
+            <div className='flex-1 text-center md:text-left'>
                 <h1 className='text-3xl font-semibold '>Login</h1>
                 <p className='text-[#777] mt-2'>Doesn't have an account yet? <Link to='/register'><span className='underline text-[#FF7425]'>Sign Up</span></Link></p>
                 <form className='flex flex-col mt-7 gap-2'>
                     <div className='flex flex-col gap-1'>
                         <label className='text-xl text-[#232323] font-semibold'>Email</label>
-                        <input type="email" name="" id="" placeholder="you@example.com" className="py-3 md:py-4 px-2 mx-auto md:w-1/2 rounded-sm border border-black" />
+                        <input type="email" name="" id="" placeholder="you@example.com" className="py-3 md:py-4 px-2 mx-auto md:ml-0 md:w-1/2 rounded-sm border border-black" />
                     </div>
                     <div className='flex flex-col gap-1'>
                         <label className='text-xl text-[#232323] font-semibold'>Password</label>
-                        <input type="password" name="" id="" placeholder="Password" className="py-3 md:py-4 px-2 mx-auto md:w-1/2 rounded-sm border border-black" />
+                        <input type="password" name="" id="" placeholder="Password" className="py-3 md:py-4 px-2 mx-auto md:ml-0 md:w-1/2 rounded-sm border border-black" />
 
                     </div>
                     <div className=" my-4">

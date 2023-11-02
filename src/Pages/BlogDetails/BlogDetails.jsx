@@ -19,9 +19,9 @@ const BlogDetails = () => {
     return (
         <div>
             <Banner name={'Blog Details'} first={'Home'} second={'Contact Us'} img={banner} />
-            <div className="flex gap-8 mx-28 my-28">
-                <div className="w-[70%] px-2">
-                    <h1 className="text-[#232323] font-semibold text-3xl">With Our Vastly Improved Notifications System, Users Have More Control.</h1>
+            <div className="flex my-12 flex-col lg:flex-row gap-8 lg:mx-28 lg:my-28">
+                <div className="lg:w-[70%] px-2">
+                    <h1 className="text-[#232323] text-xl font-semibold lg:text-3xl">With Our Vastly Improved Notifications System, Users Have More Control.</h1>
                     <div className="border border-gray-300 my-6"></div>
                     <div className="flex gap-6 mb-5">
                         <div className="flex gap-2 items-center">
@@ -48,7 +48,7 @@ const BlogDetails = () => {
                     <p className="text-[#777] my-9">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa sit, ullam soluta autem officia dicta quam earum similique harum accusamus distinctio debitis quaerat quisquam provident dolorem laudantium hic voluptatum nobis maiores minus labore fugit optio ducimus libero. Suscipit, minus aperiam!</p>
                     <img src={img1} alt="" className="w-full" />
                     <p className="text-[#777] my-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deser unt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan tium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi archi tecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit asperna tur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non num quam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod incididunt.</p>
-                    <div className="flex gap-4">
+                    <div className="flex flex-col lg:flex-row gap-4">
                         <img src={img2} alt="" />
                         <p className="text-[#777] my-8 leading-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim ad minim veniam, quis nostrud exercitation ulla mco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida tat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
@@ -77,7 +77,7 @@ const BlogDetails = () => {
                     <div className="border border-gray-300 my-10"></div>
                     <div>
                         <h3 className="font-semibold text-xl text-[#232323]">Related Posts</h3>
-                        <div className="flex gap-6 my-5">
+                        <div className="flex flex-col lg:flex-row gap-6 my-5">
                             <BlogCard title={'Auis Nostrud Exercita Ullamco Laboris Nisi Ut'} desc={'Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore.'} img={blog1} date={'01 November 2023'} />
                             <BlogCard title={'Excepteur Sint Occaecat Cupida Tat Non Proident'} desc={'Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore.'} img={blog2} date={'25 April 2024'} />
                         </div>
@@ -107,7 +107,7 @@ const BlogDetails = () => {
                         </form>
                     </div>
                 </div>
-                <div className="flex flex-col gap-8">
+                <div className="mx-2 flex flex-col gap-8">
                     <Search/>
                     <Follow/>
                     <Categories/>
