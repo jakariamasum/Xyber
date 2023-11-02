@@ -9,9 +9,9 @@ import Tag from "../../components/Tag/Tag";
 
 const BlogsPage = () => {
     return (
-        <div className=" mt-20 mb-12 mx-28">
+        <div className=" mt-20 mb-12">
             <Banner img={banner} name={'Blogs'} first={'Home'} second={'Contact Us'} />
-            <div className="flex gap-6">
+            <div className="flex gap-6 mx-28">
                 <div className="w-[70%] mt-20 flex flex-col gap-6">
                     <Card />
                     <Card />

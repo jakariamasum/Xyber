@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -11,10 +12,32 @@ import team5 from '../../assets/team05.jpg';
 import TeamCard from './TeamCard';
 
 const TeamCarousal = () => {
+    const [slidesPerView, setSlidesPerView] = useState(1);
+
+    useEffect(() => {
+        const updateSlidesPerView = () => {
+            if (window.innerWidth >= 1024) {
+                setSlidesPerView(4);
+            } else if (window.innerWidth >= 640) {
+                setSlidesPerView(2);
+            } else {
+                setSlidesPerView(1);
+            }
+        };
+
+        updateSlidesPerView();
+
+        window.addEventListener('resize', updateSlidesPerView);
+
+        return () => {
+            window.removeEventListener('resize', updateSlidesPerView);
+        };
+    }, []);
+
     return (
         <div className="px-4 md:px-10 lg:px-16">
             <Swiper
-                slidesPerView={1}
+                slidesPerView={slidesPerView}
                 spaceBetween={10}
                 pagination={{
                     clickable: true,
