@@ -17,7 +17,7 @@ const Home = () => {
             <Service />
             <Counter />
             <Team />
-            <Watch />
+            {/* <Watch /> */}
             <Questions />
             <Plans />
             <Testimonials />

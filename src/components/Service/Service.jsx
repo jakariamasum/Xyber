@@ -7,7 +7,7 @@ const Success = () => {
     return (
         <div className="bg-white py-28">
             <Title subtitle={'Our Service'} title={'That Wow Your Success'} />
-            <div className="grid grid-cols-4 gap-6 mx-28 mt-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 mx-4 lg:grid-cols-4 gap-6 lg:mx-28 mt-10">
                 <ServiceCard serviceName={'IT Design'} serviceDesc={'Nulla a mauris feugiat bib sapi pretium, dictum nisl. Inter frila varius nisl vitae ornare.'} icon={<FaDraftingCompass fill='#FF7425' size={40} />} />
                 <ServiceCard serviceName={'IT Management'} serviceDesc={'Nulla a mauris feugiat bib sapi pretium, dictum nisl. Inter frila varius nisl vitae ornare.'} icon={<FaTasks fill='#FF7425' size={40} />} />
                 <ServiceCard serviceName={'Data Security'} serviceDesc={'Nulla a mauris feugiat bib sapi pretium, dictum nisl. Inter frila varius nisl vitae ornare.'} icon={<FaClock fill='#FF7425' size={40} />} />

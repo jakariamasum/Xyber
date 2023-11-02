@@ -3,13 +3,13 @@ import banner from '../../assets/banner-3.jpg'
 import img1 from '../../assets/protfolio-img04.png'
 import img2 from '../../assets/protfolio-img06.png'
 import img3 from '../../assets/protfolio-img02.png'
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaFilePdf } from "react-icons/fa";
 const ServiceDetails = () => {
     return (
         <div className="mt-20 mx-28">
             <Banner img={banner} name={'Service Details'} first={'Home'} second={'Services'} />
             <div className="flex gap-6 my-12">
-                <div className="w-3/4 border border-red-500">
+                <div className="w-full">
                     <div className="bg-[#F3F4F8] p-6">
                         <div className="flex mb-5 gap-2">
                             <div className="bg-[#FF7425] w-2  h-auto"></div>
@@ -26,6 +26,21 @@ const ServiceDetails = () => {
                     <div className=" text-center mt-20 bg-[#F3F4F8] p-6">
                         <h2 className="text-xl font-semibold text-[#232323]">If You Need Any Help Contact With Us</h2>
                         <p className="text-[#FF7425] font-bold mt-8 text-2xl">+880111455454</p>
+                    </div>
+                    <div className="bg-[#F3F4F8] p-6 mt-20">
+                        <div className="flex mb-5 gap-2">
+                            <div className="bg-[#FF7425] w-2  h-auto"></div>
+                            <h2 className="text-[18px] font-semibold text-[#232323] ">Download Brochurs</h2>
+                        </div>
+                        <p className="text-[#777]">Pleasure and praising pain was born and I will give you a complete account.</p>
+                        <div>
+                            <div className="flex items-center">
+                                <FaFilePdf size={60} fill="white" className="p-2 mt-8 bg-[#FF7425]"/> <span className="mt-8 font-bold p-4 bg-white">Info Company</span>
+                            </div>
+                            <div className="flex items-center">
+                                <FaFilePdf size={60} fill="white" className="p-2 mt-8 bg-[#FF7425]"/> <span className="mt-8 font-bold p-4 bg-white">Info Company</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="flex flex-col gap-6">

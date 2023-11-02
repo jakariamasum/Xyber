@@ -8,7 +8,7 @@ const ServiceCard = ({ serviceName, serviceDesc, icon }) => {
             </div>
             <h1 className='font-bold text-2xl cursor-pointer hover:text-[#ff7425]'>{serviceName}</h1>
             <p className='text-[#b4b4b4]'>{serviceDesc}</p>
-            <Link to="#" className='flex items-center gap-2 hover:text-[#ff7425]'> <span>Read More</span> <FaArrowRight /> </Link>
+            <Link to={`/service-details/${serviceName}`} className='flex items-center gap-2 hover:text-[#ff7425]'> <span>Read More</span> <FaArrowRight /> </Link>
         </div>
     );
 };
