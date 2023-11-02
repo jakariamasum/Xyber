@@ -4,21 +4,21 @@ import { FaFacebookF, FaGithub, FaGoogle } from 'react-icons/fa';
 
 const Login = () => {
     return (
-        <div className='mt-24 flex gap-2 mx-28 bg-white items-center'>
+        <div className='py-8 md:mt-24 mx-5  flex flex-col-reverse md:flex-row gap-2 lg:mx-28 bg-white items-center'>
             <div className='flex-1'>
                 <img src={login} alt="" />
             </div>
-            <div className='flex-1'>
-                <h1 className='text-3xl font-semibold'>Login</h1>
+            <div className='flex-1 text-center'>
+                <h1 className='text-3xl font-semibold '>Login</h1>
                 <p className='text-[#777] mt-2'>Doesn't have an account yet? <Link to='/register'><span className='underline text-[#FF7425]'>Sign Up</span></Link></p>
                 <form className='flex flex-col mt-7 gap-2'>
                     <div className='flex flex-col gap-1'>
                         <label className='text-xl text-[#232323] font-semibold'>Email</label>
-                        <input type="email" name="" id="" placeholder="you@example.com" className="py-3 md:py-4 px-2 w-1/2 rounded-sm border border-black" />
+                        <input type="email" name="" id="" placeholder="you@example.com" className="py-3 md:py-4 px-2 mx-auto md:w-1/2 rounded-sm border border-black" />
                     </div>
                     <div className='flex flex-col gap-1'>
                         <label className='text-xl text-[#232323] font-semibold'>Password</label>
-                        <input type="password" name="" id="" placeholder="Password" className="py-3 md:py-4 px-2 w-1/2 rounded-sm border border-black" />
+                        <input type="password" name="" id="" placeholder="Password" className="py-3 md:py-4 px-2 mx-auto md:w-1/2 rounded-sm border border-black" />
 
                     </div>
                     <div className=" my-4">
@@ -29,7 +29,7 @@ const Login = () => {
                         <p className='text-[#777] '>or login with</p>
                         <div className="bg-gray-500 text-gray-500 w-1/3 h-[2px]"></div>
                     </div>
-                    <div className='flex gap-2 ml-20 mt-5'>
+                    <div className='flex flex-col md:flex-row gap-2 ml-20 mt-5'>
                         <div className='flex gap-2 items-center border border-red-500 rounded-lg w-fit py-3 px-6 cursor-pointer text-red-500 hover:bg-[#FF7425] hover:text-white hover:border-none'>
                             <FaGoogle /> <span >Google</span>
                         </div>
