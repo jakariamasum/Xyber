@@ -15,7 +15,7 @@ const TeamCard = ({ img, name, position }) => {
 
   return (
     <div
-      className='flex flex-col gap-4 relative'
+      className='flex flex-col gap-4 bg-white relative'
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >

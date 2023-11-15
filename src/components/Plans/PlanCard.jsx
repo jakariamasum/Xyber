@@ -2,7 +2,7 @@ import { BiCheckCircle } from 'react-icons/bi'
 import Button from '../Button/Button';
 const PlanCard = ({ price, type }) => {
     return (
-        <div className='px-6 rounded-lg py-10 shadow-2xl'>
+        <div className='px-6 rounded-lg py-10 bg-white shadow-2xl'>
             <div className='flex justify-between  items-center'>
                 <div className='flex flex-col gap-1'>
                     <p className='text-[#FF7425] font-bold'>{type}</p>

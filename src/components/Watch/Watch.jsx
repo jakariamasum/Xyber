@@ -5,7 +5,7 @@ import Button from '../Button/Button';
 
 const Watch = () => {
     return (
-        <div className='mx-1 my-10 md:my-20 relative'>
+        <div className='mx-1 md:mx-0 my-10 md:my-20 relative'>
             <img src={bg} alt="" className="w-full h-[300px] lg:h-full bg-cover" />
             <div className='md:pl-28 absolute top-4 lg:top-1/4 flex flex-col gap-2 md:gap-2 text-center md:text-left'>
                 <p className='text-[#FF7425] font-bold text-xl md:text-2xl'>Watch Us</p>
